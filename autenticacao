@@ -1,0 +1,15 @@
+#Bibliotecas necessárias
+import pandas as pd
+
+#Banco de Dados em Pandas
+df = pd.read_csv('alunos.csv')
+df.head()
+
+email = df[['Nome', 'E-mail academico']]
+
+#Parte lógica da autenticação
+user = input()
+if user in email['E-mail academico'].values:
+    print('autorizado')
+else:
+    print('insira um e-mail valido')
