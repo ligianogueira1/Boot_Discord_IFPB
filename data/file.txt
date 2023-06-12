@@ -1,1 +1,0 @@
-Creating a "data" folder to store the project's CSV's
