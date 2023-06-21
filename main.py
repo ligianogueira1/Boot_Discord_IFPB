@@ -17,60 +17,61 @@ async def on_ready():
 @bot.event
 async def on_member_join(member):
     # Obter o objeto Role correspondente ao papel de Pretendente
-    role = discord.utils.get(member.guild.roles, name='Pretendente')
+    role = discord.utils.get(member.guild.roles, name='pretendente')
 
     # Adicionar o papel de Pretendente ao usuário ao entrar no servidor
     await member.add_roles(role)
 
-    # Obter o canal "Canal de autenticação"
-    channel = discord.utils.get(member.guild.channels, name='Canal de autenticação')
+    # Obter o primeiro canal de texto acessível pelo membro
+    public_channel = member.guild.text_channels[0]
 
-    # Enviar uma mensagem de boas-vindas e solicitar o e-mail de autenticação no canal "Canal de autenticação"
-    await channel.send(f'Bem-vindo, jovem padawan! Digite o seu e-mail para realizar a autenticação e entrar para o lado nerd da força')
+    await member.send('Bem vindo jovem padawan, para entrar para o lado nerd da força, digite o seu e-mail.')
 
     def check(message):
-        return message.author == member and message.channel == channel
+        return message.author == member and message.channel == public_channel
 
-    # Aguardar a resposta do usuário no canal "Canal de autenticação" e armazenar o e-mail fornecido
-    message = await bot.wait_for('message', check=check)
-    email = message.content
+    # Aguardar a resposta do usuário no primeiro canal de texto e armazenar o e-mail fornecido
+    try:
+        message = await bot.wait_for('message', check=check, timeout=300)
+        email = message.content
 
-    name, authenticated = authenticate(email)
+        name, authenticated = authenticate(email)
 
-    if authenticated:
-        # Enviar a chave de autenticação para o e-mail do usuário
-        chave = random_key()
-        send_email(email, chave)
-        await member.send('A chave de autenticação foi enviada para o seu e-mail.')
+        if authenticated:
+            # Enviar a chave de autenticação para o e-mail do usuário
+            chave = random_key()
+            send_email(email, chave)
+            await member.send('A chave de autenticação foi enviada para o seu e-mail.')
 
-        def check(message):
-            return message.author == member and message.channel == channel
+            # Aguardar a resposta do usuário com a chave de autenticação no primeiro canal de texto
+            try:
+                message = await bot.wait_for('message', check=check, timeout=300)
 
-        # Aguardar a resposta do usuário com a chave de autenticação no canal "Canal de autenticação"
-        message = await bot.wait_for('message', check=check)
+                if message.content == chave:
+                    authenticated_users[member.id] = True
 
-        if message.content == chave:
-            authenticated_users[member.id] = True
+                    # Obter o objeto Role correspondente ao papel desejado (Aluno ou Professor)
+                    if "@academico.ifpb.edu.br" in email:
+                        role = discord.utils.get(member.guild.roles, name='Aluno')
+                    elif "@ifpb.edu.br" in email:
+                        role = discord.utils.get(member.guild.roles, name='Professor')
 
-            # Obter o objeto Role correspondente ao papel desejado (Aluno ou Professor)
-            if "@academico.ifpb.edu.br" in email:
-                role = discord.utils.get(member.guild.roles, name='Aluno')
-            elif "@ifpb.edu.br" in email:
-                role = discord.utils.get(member.guild.roles, name='Professor')
+                    # Adicionar o papel ao usuário autenticado
+                    await member.add_roles(role)
 
-            # Adicionar o papel ao usuário autenticado
-            await member.add_roles(role)
+                    await public_channel.send('Chave válida! Você agora tem acesso aos canais do servidor.')
 
-            # Conceder acesso aos canais do servidor (exceto "Canal de autenticação")
-            for guild_channel in member.guild.channels:
-                if guild_channel != channel:
-                    await member.add_roles(guild_channel)
+                else:
+                    await public_channel.send('Chave incorreta. Por favor, digite novamente.')
 
-            await channel.send('Chave válida! Você agora tem acesso aos canais do servidor.')
+            except asyncio.TimeoutError:
+                await member.ban(reason='Tempo esgotado. Não forneceu a chave de autenticação a tempo')
+
         else:
-            await channel.send('Sinto muito, a chave digitada não é válida. Verifique novamente seu e-mail e procure pela chave correta.')
-    else:
-        await channel.send('E-mail não encontrado na base de dados.')
-        await member.ban(reason='E-mail não encontrado na base de dados')
+            await member.ban(reason='E-mail não consta na base de dados do servidor')
+
+    except asyncio.TimeoutError:
+        await member.ban(reason='Tempo esgotado. Não forneceu o e-mail a tempo')
+
 
 bot.run(token)
