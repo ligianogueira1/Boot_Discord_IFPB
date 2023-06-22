@@ -16,16 +16,20 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    # Obter o objeto Role correspondente ao papel de Pretendente
-    role = discord.utils.get(member.guild.roles, name='pretendente')
+    channel = bot.get_channel(1121156083583549601)  # Substitua pelo ID do canal desejado
+    message = 'Bem-vindo jovem padawan, para entrar para o lado nerd da força, digite o seu e-mail.'
+    await channel.send(message)
 
     # Adicionar o papel de Pretendente ao usuário ao entrar no servidor
+    role_id = 1121156684694421645  
+    role = discord.utils.get(member.guild.roles, id=role_id)
     await member.add_roles(role)
 
-    # Obter o primeiro canal de texto acessível pelo membro
-    public_channel = member.guild.text_channels[0]
+    # Obter o objeto do canal usando o ID
+    public_channel_id = 1121156083583549601  # Substitua pelo ID do canal desejado
+    public_channel = bot.get_channel(public_channel_id)
 
-    await member.send('Bem vindo jovem padawan, para entrar para o lado nerd da força, digite o seu e-mail.')
+# ***************************** O erro está nesse trecho de código *********************************************************************
 
     def check(message):
         return message.author == member and message.channel == public_channel
@@ -34,8 +38,10 @@ async def on_member_join(member):
     try:
         message = await bot.wait_for('message', check=check, timeout=300)
         email = message.content
-
+        await member.send('A chave de autenticação foi enviada para o seu e-mail.')
         name, authenticated = authenticate(email)
+        
+# ************************ ele sempre entra como false em if authenticated: e vai pra o else "culpado 2" *******************************************
 
         if authenticated:
             # Enviar a chave de autenticação para o e-mail do usuário
@@ -65,13 +71,13 @@ async def on_member_join(member):
                     await public_channel.send('Chave incorreta. Por favor, digite novamente.')
 
             except asyncio.TimeoutError:
-                await member.ban(reason='Tempo esgotado. Não forneceu a chave de autenticação a tempo')
+                await public_channel.send('Culpado 1')
 
         else:
-            await member.ban(reason='E-mail não consta na base de dados do servidor')
+            await public_channel.send('Culpado 2')
 
     except asyncio.TimeoutError:
-        await member.ban(reason='Tempo esgotado. Não forneceu o e-mail a tempo')
+        await public_channel.send('Culpado 3')
 
 
 bot.run(token)
