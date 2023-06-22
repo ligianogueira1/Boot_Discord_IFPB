@@ -1,7 +1,9 @@
 import pandas as pd
 import smtplib
 import random
-from config import smtp_username, smtp_password
+import email.message
+from config import password, email_bot
+
 
 students = pd.read_csv('data/alunos.csv')
 teachers = pd.read_csv('data/professores.csv')
@@ -52,36 +54,76 @@ def random_key():
         None.
 
     """
-    key = ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789', k=8))
+    key = ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&%$#@', k=6))
     return key
 
-def send_email(destinatario, key):
-    """Sends an email containing an authentication key to the specified recipient.
-
-    The function uses an SMTP server to send an email to the recipient containing the provided authentication key.
-    The SMTP server and authentication credentials should be properly configured before using this function.
+def send_email(addressee, key):
+    """
+    Sends an email with the verification code to the specified recipient.
 
     Args:
-        destinatario (str): The email address of the recipient.
-        key (str): The authentication key to be sent.
+        addressee (str): The email address of the recipient.
+        key (str): The verification code to be included in the email.
 
     Returns:
         None
 
     Raises:
-        smtplib.SMTPException: Exception raised in case of failure to send the email.
-
+        None
     """
 
-    smtp_server = 'seu_servidor_smtp'
-    smtp_port = 587
-    
+    corpo_email = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            body {{
+                font-family: 'Roboto', sans-serif;
+                background-color: #f2f2f2;
+                margin: 0;
+                padding: 0;
+            }}
+            .container {{
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 6px;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            }}
+            h1 {{
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #333333;
+            }}
+            p {{
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #555555;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Você resolveu entrar para o lado certo da força! Aqui está o seu código:</h1>
+            <p>{key}</p>
+        </div>
+    </body>
+    </html>
+    """
 
-    subject = 'Chave de autenticação'
-    message = f'Aqui está a sua chave de autenticação: {key}'
-    email_message = f'Subject: {subject}\n\n{message}'
+    msg = email.message.Message()
+    msg['Subject'] = "código de verificação do servidor"
+    msg['From'] = f'{email_bot}'
+    msg['To'] = f'{addressee}'
+ 
+    msg.add_header('Content-Type', 'text/html')
+    msg.set_payload(corpo_email )
 
-    with smtplib.SMTP(smtp_server, smtp_port) as server:
-        server.starttls()
-        server.login(smtp_username, smtp_password)
-        server.sendmail(smtp_username, destinatario, email_message)
+    s = smtplib.SMTP('smtp.gmail.com: 587')
+    s.starttls()
+
+    s.login(msg['From'], password)
+    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+    print('Email enviado')
