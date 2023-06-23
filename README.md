@@ -5,7 +5,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="" target="_blank"><img src="https://github.com/ligianogueira1/Bot_Discord_IFPB/assets/109001008/7e3c3093-8c87-499b-9921-0c735ce681f8"/></a>
 </p>
 <h1 align="center"> BOT IFPB </h1>
-<h4 align="center"> Bot para Discord - Engenharia de Computação/IFPB <a href="https://www.ifpb.edu.br/">IFPB</a>(Inverno 2023) </h4>
+<h4 align="center"> Bot para Discord - Engenharia de Computação/<a href="https://www.ifpb.edu.br/">IFPB</a>(Inverno 2023) </h4>
 
 <br>
 </br>
