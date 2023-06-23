@@ -6,9 +6,9 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 
 
 <p align="center"> 
-<a href="https://imgbox.com/hdeygBol" target="_blank"><img src="https://images2.imgbox.com/95/76/hdeygBol_o.jpeg" alt="image host"/></a>
+<a href="" target="_blank"><img src="https://github.com/ligianogueira1/Bot_Discord_IFPB/assets/109001008/7e3c3093-8c87-499b-9921-0c735ce681f8" alt="image host"/></a>
 </p>
-<h1 align="center"> ANTI FRAUDE TECH S.A. </h1>
+<h1 align="center"> BOT IFPB </h1>
 <h4 align="center"> Bot para Discord - Engenharia de Computação/IFPB <a href="https://www.ifpb.edu.br/">IFPB</a>(Inverno 2023) </h4>
 
 <br>
@@ -33,7 +33,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <li>Canal #Avisos da Coordenação ⚠️:</li> 
 Este é o canal central do servidor, contendo todos os alunos regularmente matriculados no curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação entre os estudantes e a Coordenação do curso, de modo a alinhar questões gerenciais, acadêmicas e institucionais. 
 
-<li>CCanal #Oportunidades de Emprego 📊:</li>  
+<li>Canal #Oportunidades de Emprego 📊:</li>  
 Este fórum engloba alunos atuais e egressos do curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação para que os ex-estudantes possam compartilhar suas experiências na área da tecnologia, divulgar vagas de emprego e/ou receber oportunidades advindas da coordenação do curso.  
 
 <li>Canal “Oportunidades Internas 📌:</li>
@@ -47,6 +47,10 @@ Traduzido livremente para o português como "fora do assunto”, este termo est�
 
 <li>Canal #️Professores 📚:</li>  
 Canal destinado apenas para intermédio de comunicação entre os docentes do curso. Neste, os professores podem discutir desde questões as quais julguem relevantes para o andamento do curso a temáticas livres. 
+
+<li>Comando “!artigo” 🔍:</li>  
+
+Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. É importante frisar que outros membros podem ter acesso à sua pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”. 
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -98,7 +102,3 @@ Canal destinado apenas para intermédio de comunicação entre os docentes do cu
 
 <li>Professor responsável</li>
 <p>Henrique Cunha</p>
-
-Comando “!artigo” 🔍: 
-
-Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. É importante frisar que outros membros podem ter acesso à sua pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”. 
