@@ -13,7 +13,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" target="_blank"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" alt="image host" height="142px"/></a>
 </p>
 
-<h4><a href="#contexto">Contexto e objetivo</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#principais">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
+<h4><a href="#contexto">Contexto e objetivo</a> | <h4><a href="#detalhamento">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -24,7 +24,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 
-<h2 id="detalhamento"> :clipboard: DESCRIÇÃO DETALHADA DOS CANAIS DO SERVIDOR</h2>
+<h2 id="detalhamento"> :clipboard: DESCRIÇÃO DOS CANAIS DO SERVIDOR</h2>
 
 <li>Canal #Avisos da Coordenação ⚠️:</li> 
 Este é o canal central do servidor, contendo todos os alunos regularmente matriculados no curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação entre os estudantes e a Coordenação do curso, de modo a alinhar questões gerenciais, acadêmicas e institucionais. 
@@ -73,7 +73,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-<h2 id="principais_ferramentas"> :books: PRINCIPAIS FERRAMENTAS UTILIZADAS </h2>
+<h2 id="ferramentas"> :books: PRINCIPAIS FERRAMENTAS UTILIZADAS </h2>
 
 <ul>
   <li>Discord</li>
