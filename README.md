@@ -6,7 +6,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 
 
 <p align="center"> 
-<a href="" target="_blank"><img src="https://github.com/ligianogueira1/Bot_Discord_IFPB/assets/109001008/7e3c3093-8c87-499b-9921-0c735ce681f8" alt="image host"/></a>
+<a href="" target="_blank"><img src="https://github.com/ligianogueira1/Bot_Discord_IFPB/assets/109001008/7e3c3093-8c87-499b-9921-0c735ce681f8"/></a>
 </p>
 <h1 align="center"> BOT IFPB </h1>
 <h4 align="center"> Bot para Discord - Engenharia de Computação/IFPB <a href="https://www.ifpb.edu.br/">IFPB</a>(Inverno 2023) </h4>
@@ -14,7 +14,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <br>
 </br>
 <p align="center"> 
-<a href="https://imgbox.com/mlNPr8ij" target="_blank"><img src="https://i.gifer.com/OyGx.mp4" alt="image host" height="142px"/></a>
+<a href="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" target="_blank"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" alt="image host" height="142px"/></a>
 </p>
 
 <h4><a href="#contexto">Contexto e objetivo</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#principais_ferramentas">Principais ferramentas</a> | <a href="#execucao">Instrução de execução</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
