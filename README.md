@@ -52,21 +52,50 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h2 id="arquivos"> :floppy_disk: DESCRIÇÃO DOS ARQUIVOS DO PROJETO</h2>
 
-<p>Esse projeto inclui arquivos executáveis e de destino, além de acesso ao nosso diretório fonte (repositório), como a seguir:</p>
-<h4>Arquivos executáveis:</h4>
+<p>Este projeto inclui arquivos executáveis e de destino, além de acesso ao nosso diretório fonte (repositório), como a seguir:</p>
+<h4>➔ Arquivos executáveis:</h4>
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte com os procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
-   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém o código-fonte com as intruções para que o BOT encaminhe a chave de verificação para o e-mail informado pelo usuário. </li>
-   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Possui a simbologia de um arquivo config.py, contendo os dados de e-mail e senha do servidor para que o processo de autenticação possa ocorrer (envio do código de verificação e, posteriormente, atribuição de cargos). Trata-se apenas de uma representação por ser uma informação confidencial. </li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizadas as seguintescom os procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
+   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. </li>
+    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>.gitignore</b></a> - Contém o código-fonte com as intruções para que o BOT encaminhe a chave de verificação para o e-mail informado pelo usuário. </li>
+   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo responsável pela informação dos dados de e-mail e senha do servidor para que o processo de autenticação possa ocorrer (envio do código de verificação e, posteriormente, atribuição de cargos). Trata-se de uma informação confidencial. </li>
 </ul>
 
-<h4>Arquivos de destino:</h4> 
+<h4>➔ Bibliotecas utilizadas:</h4> 
+<ul>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
+  <li>asyncio:</li>
+  <li>discord:</li>
+
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> </li>
+  <li>pandas:</li>
+  
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>.gitignore</b></a> </li>
+  <li>email.message:</li>
+  <li>random:</li>
+  <li>requests:</li>
+  <li>smtplib:</li>
+  <li>xml.etree.ElementTree:</li>
+
+<h4>➔ Módulos internos:</h4> 
+<ul>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
+  <li>from discord.ext import commands:</li>
+  <li>from config import *:</li>
+  <li>from bot_functions import *:</li>
+  <li>from database import *:</li>
+
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>.gitignore</b></a> </li>
+  <li>from database import *:</li>
+  <li>from config import *:</li>
+  
+<h4>➔ Arquivos de destino:</h4> 
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/alunos.csv"><b>alunos.csv</b></a> - Contém o arquivo de "alunos.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta alunos matriculados em uma Instituição de Ensino Pública.</li>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/professores.csv"><b>professores.csv</b></a> - Contém o arquivo de "professores.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta professores vinculados à uma Instituição de Ensino Pública</li>
 </ul>
 
-<h4>Diretório fonte:</h4>
+<h4>➔ Diretório fonte:</h4>
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB"><b> Bot_Discord_IFPB</b></a> - Inclui todos os arquivos listados acima </li>
 </ul>
