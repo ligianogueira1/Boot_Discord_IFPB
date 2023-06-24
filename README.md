@@ -63,16 +63,16 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
-  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a>
   <li>asyncio:</li>
   <li>discord:</li>
 </ul>
 <ul>
-  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> </li>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b>:</a>
   <li>pandas:</li>
  </ul> 
  <ul>
-  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> </li>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
   <li>email.message:</li>
   <li>random:</li>
   <li>requests:</li>
@@ -82,14 +82,14 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h4>➔ Módulos internos:</h4> 
 <ul>
-  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
   <li>from discord.ext import commands:</li>
   <li>from config import *:</li>
   <li>from bot_functions import *:</li>
   <li>from database import *:</li>
 </ul>
 <ul>
-  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> </li>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
   <li>from database import *:</li>
   <li>from config import *:</li>
 </ul>  
