@@ -13,7 +13,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" target="_blank"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" alt="image host" height="142px"/></a>
 </p>
 
-<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#canais">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#funcionalidades">Funcionalidades</a> |<a href="#creditos">Créditos</a> |</h4>
+<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#canais">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#funcionalidades">Funcionalidades</a> | <a href="#bot">O Bot</a>| <a href="#creditos">Créditos</a> |</h4>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -24,6 +24,16 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="canais"> :clipboard: DESCRIÇÃO DOS CANAIS DO SERVIDOR</h2>
+
+<li>Canal #Autenticação 🖥️:</li> 
+<ul>
+Neste canal, o Bot é acionado quando um novo membro entra no servidor; este recebe o cargo de 'pretendente_entrada' e é solicitado que digite seu e-mail para autenticação. Caso o e-mail esteja na base de dados, o usuário recebe uma chave de autenticação via endereço eletrônico. Há um tempo limite de 5 minutos para inserção da chave correta e, caso ela seja válida e o e-mail conste na base de dados, o membro recebe o cargo apropriado e é inserido no servidor; caso contrário, é banido.
+</ul>
+
+<li>Canal #Boas vindas 🎉:</li> 
+<ul>
+Neste canal, o usuário recém-autenticado recebe uma mensagem de boas-vindas, seguido da informação de que possui acesso aos canais do servidor.
+</ul>
 
 <li>Canal #Avisos da Coordenação ⚠️:</li> 
 <ul>
@@ -150,6 +160,17 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
   <li>HTML</li>
   <p> Para envio do e-mail contendo o código de verificação do usuário a ser autenticado, fizemos uso da linguagem <strong>HTML</strong> para melhor formatação e agradabilidade estética, visto que é uma linguagem de marcação utilizada na construção de páginas na Web. </p>
 </ul>
+
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+
+<h2 id="bot">🤖 O BOT</h2>
+
+<h4>Confira alguns exemplos do funcionamento do Bot IFPB</h4>
+
+<p align="center"> 
+<li>Canais:</li>
+<p align="center"> 
+<a href="" target="_blank"><img src="https://uploaddeimagens.com.br/images/004/519/173/full/Captura_de_tela_2023-06-24_183525.png?1687643464"/></a>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
