@@ -13,7 +13,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" target="_blank"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" alt="image host" height="142px"/></a>
 </p>
 
-<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#detalhamento">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
+<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#canais">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#funcionalidades">Funcionalidades</a> |<a href="#creditos">Créditos</a> |</h4>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -23,30 +23,56 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-
-<h2 id="detalhamento"> :clipboard: DESCRIÇÃO DOS CANAIS DO SERVIDOR</h2>
+<h2 id="canais"> :clipboard: DESCRIÇÃO DOS CANAIS DO SERVIDOR</h2>
 
 <li>Canal #Avisos da Coordenação ⚠️:</li> 
+<ul>
 Este é o canal central do servidor, contendo todos os alunos regularmente matriculados no curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação entre os estudantes e a Coordenação do curso, de modo a alinhar questões gerenciais, acadêmicas e institucionais. 
+</ul>
 
 <li>Canal #Oportunidades de Emprego 📊:</li>  
+<ul>
 Este fórum engloba alunos atuais e egressos do curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação para que os ex-estudantes possam compartilhar suas experiências na área da tecnologia, divulgar vagas de emprego e/ou receber oportunidades advindas da coordenação do curso.  
+</ul>
 
 <li>Canal “Oportunidades Internas 📌:</li>
+<ul>
 Fórum destinado aos atuais alunos do curso, de modo que estes possam receber mensagens de divulgação referentes aos editais internos do IFPB (como bolsas de monitoria, pesquisa e extensão, auxílios estudantis, etc.). 
+</ul>
 
 <li>Canal #Dúvidas 🙋‍♀️:</li>
+<ul>
 Este é o fórum apropriado para esclarecimento de dúvidas da comunidade acadêmica (alunos, professores e egressos). Por isso, o canal será moderado e deverá conter apenas perguntas pertinentes ao curso ou mercado profissional da área. 
+</ul>
 
 <li>Canal #Off-topic 💥:</li> 
-Traduzido livremente para o português como "fora do assunto”, este termo está sendo utilizado para indicar que o assunto das mensagens compartilhadas não possui ligação direta com o tema principal do servidor (comunicação sobre a graduação de Engenharia de Computação). Por isso, é um fórum de tema livre, o espaço apropriado para troca de memes, piadas e discussões de qualquer natureza. Deve-se evitar, no entanto, ofensas, conteúdo sexual, ações e expressões que gerem desconforto aos outros participantes. A moderação será mínima, desde que haja respeito. 
+<ul>
+  Traduzido livremente para o português como "fora do assunto”, este termo está sendo utilizado para indicar que o assunto das mensagens compartilhadas não possui ligação direta com o tema principal do servidor (comunicação sobre a graduação de Engenharia de Computação). Por isso, é um fórum de tema livre, o espaço apropriado para troca de memes, piadas e discussões de qualquer natureza. Deve-se evitar, no entanto, ofensas, conteúdo sexual, ações e expressões que gerem desconforto aos outros participantes. A moderação será mínima, desde que haja respeito. 
+</ul>
 
-<li>Canal #️Professores 📚:</li>  
+<li>Canal #️Professores 📚:</li>
+<ul>
 Canal destinado apenas para intermédio de comunicação entre os docentes do curso. Neste, os professores podem discutir desde questões as quais julguem relevantes para o andamento do curso a temáticas livres. 
+</ul>
 
-<li>Comando “!artigo” 🔍:</li>  
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. É importante frisar que outros membros podem ter acesso à sua pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”. 
+<h2 id="funcionalidades">✍️ FUNCIONALIDADES ADICIONAIS</h2>
+
+<li>Comando “!artigo” 🔍:</li> 
+<ul>
+Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. O Bot retornará 5 artigos classificados por ordem de relevância na arvix, constando: título, autor e link para download em pdf. É importante frisar que outros membros podem ter acesso à pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”).
+</ul>
+
+<li>Integração com o Stack Overflow 🗣️:</li>  
+<ul>
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sitee de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
+</ul>
+
+<li>Envio de dicas acadêmicas 🎓:</li>
+<ul>
+Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acadêmico aos discentes, dentre elas: dicas sobre o Campus (como se conectar ao Wi-Fi e horário dos transportes públicos, por exemplo), dicas acadêmicas/de estudo (por exemplo, revisar regularmente o conteúdo já estudado para fortalecer a memória) e dicas profissionais/da área (a exemplo desta: "Quando estiver programando, lembre-se de que um bom café pode ser o seu 'compilador' secreto!"). Algumas das orações podem conter tom humorístico, também sendo uma característica pertinente ao BOT. 
+</ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -55,7 +81,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 <p>Este projeto inclui arquivos executáveis e de destino, além de acesso ao diretório fonte (repositório), como a seguir:</p>
 <h4>➔ Arquivos executáveis:</h4>
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizadas as seguintescom os procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizados procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. </li>
     <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> - Contém o código-fonte com as intruções para que o BOT encaminhe a chave de verificação para o e-mail informado pelo usuário. </li>
    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo responsável pela informação dos dados de e-mail e senha do servidor para que o processo de autenticação possa ocorrer (envio do código de verificação e, posteriormente, atribuição de cargos). Trata-se de uma informação confidencial. </li>
@@ -64,8 +90,8 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a>
-  <li>asyncio: sendo uma biblioteca para escrever código simultâneo, utilizamos as sintaxes async/await. Com o seu conjunto de APIs, conseguimos efetuar funções Python simultaneamente e ter controle total sobre sua execução, além de controlar subprocessos, distribuir tarefas por meio de filas e sincronizar código simultâneo.</li>
-  <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens pudessem ser enviadas, lidas e respondidas com base quem pré-definições.</li>
+  <li>asyncio: sendo uma biblioteca para escrever código simultâneo, utilizamos as sintaxes async/await. Com o seu conjunto de APIs, conseguimos efetuar funções Python simultaneamente e ter domínio sobre sua execução, além de controlar subprocessos, distribuir tarefas por meio de filas e sincronizar código simultâneo. Apesar de o parâmetro ctx ser uma convenção para boa parte dos comandos, "member" atendeu melhor aos objetivos desta função específica.</li>
+  <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens possam ser enviadas, lidas e respondidas com base em pré-definições.</li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b>:</a>
@@ -73,19 +99,19 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
  </ul> 
  <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
-  <li>email.message: este pacote é uma biblioteca para gerenciar mensagens de e-mail, em que seu componente central é um “modelo de objeto” que representa mensagens de e-mail. As aplicações do código interagem com o pacote principalmente através da interface do modelo de objeto definida no submódulo "message".</li>
-  <li>random: aqui, são implementados geradores de números pseudoaleatórios para várias distribuições. A biblioteca é utilizada, no código, para gerar a chave de segurança que será enviada para o endereço eletrônico do usuário em processo de autenticação. </li>
-  <li>requests: esta é uma biblioteca necessária de utilização devido às funcionalidade de exibir artigos acadêmicos solicitados e integração com o Stack Overflow. No código, para a ambas as funções, fizemos uso do método "get" para recuperar os dados do endpoint definido. Entretanto, para a primeira, foram utilizados métodos de busca específicos; para a segunda, por sua vez, definimos o URL da API para varredura dos dados e utilizamos o response.json() para exibir as respostas obtidas. </li>
-  <li>smtplib: familiar ao protocolo HTTP, o SMTP (Simple Mail Transfrer Protocol) é utilizado para envio de e-mail; ele dita como o este será formatado, criptografado e transmitido.</li>
-  <li>xml.etree.ElementTree: XML se refere a "Extensible Markup Language" e possuir similaridades ao HTML, sendo que sua proposta principal é guardar e transportar dados e trata-se de uma linguagem auto-descritiva. Esta biblioteca implementa uma API simples e eficiente para analisar e criar dados XML, funcionando como uma estrutura de árvore que suporta hierarquia. Juntamente aos métodos findall() e find(), o Bot consegue fazer uma busca e retornar o resultado solicitado com base nas variáveis pré-definidas. </li>
+  <li>email.message: sendo uma biblioteca de gerenciamento, seu componente central é um “modelo de objeto” que representa mensagens de e-mail. As aplicações do código interagem com o pacote principalmente através da interface do modelo de objeto definida no submódulo "message".</li>
+  <li>random: aqui, são implementados geradores de números pseudoaleatórios para várias distribuições. A biblioteca é utilizada, no código, para gerar a chave de segurança que será enviada para o endereço eletrônico do usuário no processo de autenticação. </li>
+  <li>requests: esta é uma biblioteca necessária de utilização devido às funcionalidades de exibir artigos acadêmicos solicitados e integração com o Stack Overflow. No código, para ambas as funções, fizemos uso do método "get" para recuperar os dados do endpoint definido. Entretanto, para a primeira, foram utilizados métodos de busca específicos; para a segunda, por sua vez, definimos o URL da API para varredura dos dados e utilizamos o response.json() para exibir as respostas obtidas. </li>
+  <li>smtplib: familiar ao protocolo HTTP, o SMTP (Simple Mail Transfrer Protocol) é utilizado para envio de e-mail; ele dita como este será formatado, criptografado e transmitido.</li>
+  <li>xml.etree.ElementTree: XML se refere a "Extensible Markup Language" e possui similaridades com o HTML, sendo que sua proposta principal é guardar e transportar dados. Trata-se de uma linguagem auto-descritiva. Esta biblioteca implementa uma API simples e eficiente para analisar e criar dados XML, funcionando como uma estrutura de árvore que suporta hierarquia. Juntamente aos métodos findall() e find(), o Bot consegue fazer uma busca e retornar o resultado solicitado com base nas variáveis pré-definidas. </li>
 </ul>
 
 <h4>➔ Módulos internos:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
-  <li>from discord.ext import commands: correspondendo ao próprio nome do módulo, aqui, extendemos a biblioteca do discord e adicionamos uma extensão de comando para auxiliar no processo de autenticação.</li>
+  <li>from discord.ext import commands: correspondendo ao próprio nome do módulo, aqui, estendemos a biblioteca do Discord e adicionamos uma extensão de comando para auxiliar no processo de autenticação.</li>
   <li>from config import *: ao buscar os dados confidenciais do config.py e importá-los no servidor, conseguimos prosseguir com os comandos necessários para o processo de autenticação do usuário. </li>
-  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de envio de e-mail, geração e validação da chave de autenticação, comando "!artigos" e comando !stackoverflow. Por isso, fora imprescindível importá-la neste arquivo vinculado ao Discord. </li>
+  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de envio de e-mail, geração e validação da chave de autenticação, comando "!artigos" e comando !stackoverflow. Por isso, fora imprescindível importá-lo neste arquivo vinculado ao Discord. </li>
   <li>from database import *: neste arquivo, encontramos docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo ao servidor através do main.py. </li>
 </ul>
 <ul>
