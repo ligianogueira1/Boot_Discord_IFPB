@@ -45,7 +45,7 @@ Canal destinado apenas para intermédio de comunicação entre os docentes do cu
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-<h2 id="comandos"> 💻 FUNCIONALIDADES ADICIONAIS </h2>
+<h2 id="funcionalidades"> 💻 FUNCIONALIDADES ADICIONAIS </h2>
 
 <li>Comando “!artigo” 🔍</li>  
 
