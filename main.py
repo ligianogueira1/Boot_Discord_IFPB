@@ -77,9 +77,9 @@ async def on_member_join(member):
     'Se tiver alguma dúvida ou precisar de ajuda, não hesite em mencionar um administrador ou moderador.\n\n'
     'Divirta-se e aproveite a comunidade!'
 )
-    await public_channel.send('Bem-vindo jovem padawan, para entrar para o lado nerd da força, digite o seu e-mail.')
+    await public_channel.send('Bem-vindo, jovem Padawan! Para entrar para o lado nerd da força, digite o seu e-mail.')
     await public_channel.send('Caso o e-mail não conste na base de dados, você será banido e não entrará para o nosso lado da força.')
-    await public_channel.send('O tempo limite para o processo é de 5 minutos.')
+    await public_channel.send('O tempo limite para o processamento é de 5 minutos.')
 
     def check(message):
         return message.author == member and message.channel == public_channel
@@ -92,7 +92,7 @@ async def on_member_join(member):
         if authenticated:
             chave = random_key()
             send_email(email, chave)
-            await public_channel.send('A chave de autenticação foi enviada para o seu e-mail, insira-a para ter acesso aos canais do servidor')
+            await public_channel.send('A chave de autenticação foi enviada para o seu e-mail. Por favor, informe-a para ter acesso aos canais do servidor')
 
             while True:
                 message = await bot.wait_for('message', check=check, timeout=300)
@@ -112,7 +112,7 @@ async def on_member_join(member):
                     if pretendentes == 0:
                         await public_channel.purge()
 
-                    await welcome_channel.send(f'Chave válida! Você agora tem acesso aos canais do servidor, seja bem-vindo {name}')
+                    await welcome_channel.send(f'Chave válida! Você agora tem acesso aos canais do servidor. Seja bem-vindo, {name}')
 
                     break
                 else:
