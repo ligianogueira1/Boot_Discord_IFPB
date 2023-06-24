@@ -64,34 +64,34 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a>
-  <li>asyncio:</li>
-  <li>discord:</li>
+  <li>asyncio: sendo uma biblioteca para escrever código simultâneo, utilizamos as sintaxes async/await. Com o seu conjunto de APIs, conseguimos efetuar funções Python simultaneamente e ter controle total sobre sua execução, além de controlar subprocessos, distribuir tarefas por meio de filas e sincronizar código simultâneo.</li>
+  <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens pudessem ser enviadas, lidas e respondidas com base quem pré-definições.</li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b>:</a>
-  <li>pandas:</li>
+  <li>pandas: utilizamos esta biblioteca para a incorporação dos arquivos .csv, que contém as relações de alunos e professores que poderão ser vinculados ao servidor. Pandas é responsável por incorporar e verificar estes Dataframes no processo de autenticação. </li>
  </ul> 
  <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
-  <li>email.message:</li>
-  <li>random:</li>
-  <li>requests:</li>
-  <li>smtplib:</li>
-  <li>xml.etree.ElementTree:</li>
+  <li>email.message: este pacote é uma biblioteca para gerenciar mensagens de e-mail, em que seu componente central é um “modelo de objeto” que representa mensagens de e-mail. As aplicações do código interagem com o pacote principalmente através da interface do modelo de objeto definida no submódulo "message".</li>
+  <li>random: aqui, são implementados geradores de números pseudoaleatórios para várias distribuições. A biblioteca é utilizada, no código, para gerar a chave de segurança que será enviada para o endereço eletrônico do usuário em processo de autenticação. </li>
+  <li>requests: esta é uma biblioteca necessária de utilização devido às funcionalidade de exibir artigos acadêmicos solicitados e integração com o Stack Overflow. No código, para a ambas as funções, fizemos uso do método "get" para recuperar os dados do endpoint definido. Entretanto, para a primeira, foram utilizados métodos de busca específicos; para a segunda, por sua vez, definimos o URL da API para varredura dos dados e utilizamos o response.json() para exibir as respostas obtidas. </li>
+  <li>smtplib: familiar ao protocolo HTTP, o SMTP (Simple Mail Transfrer Protocol) é utilizado para envio de e-mail; ele dita como o este será formatado, criptografado e transmitido.</li>
+  <li>xml.etree.ElementTree: XML se refere a "Extensible Markup Language" e possuir similaridades ao HTML, sendo que sua proposta principal é guardar e transportar dados e trata-se de uma linguagem auto-descritiva. Esta biblioteca implementa uma API simples e eficiente para analisar e criar dados XML, funcionando como uma estrutura de árvore que suporta hierarquia. Juntamente aos métodos findall() e find(), o Bot consegue fazer uma busca e retornar o resultado solicitado com base nas variáveis pré-definidas. </li>
 </ul>
 
 <h4>➔ Módulos internos:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
-  <li>from discord.ext import commands:</li>
-  <li>from config import *:</li>
-  <li>from bot_functions import *:</li>
-  <li>from database import *:</li>
+  <li>from discord.ext import commands: correspondendo ao próprio nome do módulo, aqui, extendemos a biblioteca do discord e adicionamos uma extensão de comando para auxiliar no processo de autenticação.</li>
+  <li>from config import *: ao buscar os dados confidenciais do config.py e importá-los no servidor, conseguimos prosseguir com os comandos necessários para o processo de autenticação do usuário. </li>
+  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de envio de e-mail, geração e validação da chave de autenticação, comando "!artigos" e comando !stackoverflow. Por isso, fora imprescindível importá-la neste arquivo vinculado ao Discord. </li>
+  <li>from database import *: neste arquivo, encontramos docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo ao servidor através do main.py. </li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
-  <li>from database import *:</li>
-  <li>from config import *:</li>
+  <li>from database import *: neste arquivo, encontramos docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo às funções dos Bot. </li>
+  <li>from config import *: os dados confidenciais do config.py são necessários para a normalização do funcionamento das funções do Bot. </li>
 </ul>  
 <h4>➔ Arquivos de destino:</h4> 
 <ul>
