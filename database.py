@@ -5,7 +5,7 @@ dicas = [
     "Para ter acesso às últimas notícias do campus Campina Grande, acesse: www.ifpb.edu.br/campinagrande",
     "Precisa de transporte público para ir ao Campus ou voltar para casa? Fique ligado: os ônibus da rota IFPB são: 022, 660 e 220.",
     "Precisa de transporte público para ir ao Campus ou voltar para casa? Confira os horários da rota IFPB: https://uploaddeimagens.com.br/images/004/519/078/full/20230517_124730.jpg?1687629742",
-    "Para saber mais sobre Assistência Estudantil do Campus, acesse: www.ifpb.edu.br/campinagrande/assistencia-estudantil"
+    "Para saber mais sobre Assistência Estudantil do Campus, acesse: www.ifpb.edu.br/campinagrande/assistencia-estudantil",
     "Revise regularmente o conteúdo já estudado para fortalecer a memória.",
     "Mantenha uma atitude positiva e persistente em relação aos estudos.",
     "Faça um cronograma de estudos e siga-o.",
@@ -23,7 +23,7 @@ dicas = [
     "Leia no mínimo 3 vezes o conteúdo para que ele seja realmente fixado.",
     "'Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende' - Leonardo da Vinci.",
     "Não desista de estudar por causa de um dia ruim. Seja persistente!",
-    "Não veja estudar como uma tortura; abrace a dádiva de aprender e evoluir."
+    "Não veja estudar como uma tortura; abrace a dádiva de aprender e evoluir.",
     "Seu código é como uma pizza, é melhor quando está bem 'implementada' e não possui 'bugs'!",
     "Quando estiver programando, lembre-se de que um bom café pode ser o seu 'compilador' secreto!",
     "Assim como o Pikachu evolui para o Raichu, você precisa evoluir suas habilidades de programação para se tornar um mestre!",
