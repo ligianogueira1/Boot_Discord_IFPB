@@ -63,33 +63,33 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
-  <li>No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
+  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> </li>
   <li>asyncio:</li>
   <li>discord:</li>
 </ul>
 <ul>
-  <li>No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> </li>
+  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> </li>
   <li>pandas:</li>
  </ul> 
  <ul>
-  <li>No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> </li>
+  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> </li>
   <li>email.message:</li>
   <li>random:</li>
   <li>requests:</li>
   <li>smtplib:</li>
   <li>xml.etree.ElementTree:</li>
 </ul>
-<ul>
+
 <h4>➔ Módulos internos:</h4> 
 <ul>
-  <li>No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
+  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py:</b></a> </li>
   <li>from discord.ext import commands:</li>
   <li>from config import *:</li>
   <li>from bot_functions import *:</li>
   <li>from database import *:</li>
 </ul>
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>.gitignore</b></a> </li>
+  <li>» No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> </li>
   <li>from database import *:</li>
   <li>from config import *:</li>
 </ul>  
@@ -111,15 +111,19 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 <ul>
   <li>Discord</li>
   <p> Utilizamos a plataforma <strong>Discord</strong> como alicerce do Bot. A plataforma é um dos principais meios de comunicação dentro da comunidade de TI, além de possuir ferramentas próprias de autenticação e atribuição de cargos. </p>
-    
+</ul> 
+<ul>
   <li>Python</li>
   <p> Para o desenvolvimento do projeto, utilizados como base a linguagem de programação<strong> Python </strong>, tanto por ser a ferramenta de aprendizado utilizada durante o curso de Algoritmos, quando por ser uma linguagem de alto nível, orientada a objetos, funcional, de tipagem dinâmica e forte.
-    
+</ul>  
+<ul>
   <li>Pandas</li>
   <p> Utilizados, para manipulação dos Dataframes, a biblioteca <strong>Pandas</strong>, visto que esta auxilia com uma melhor visualização do Dataframe e possuir uma filtragem de dados melhor documentada.</p>
-
+</ul> 
+<ul>
   <li>HTML</li>
   <p>Para envio do e-mail contendo o código de verificação do usuário a ser autenticado, fizemos uso da linguagem <strong>HTML</strong> para melhor formatação e agradabilidade estética, visto que é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+</ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
