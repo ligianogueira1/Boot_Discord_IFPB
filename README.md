@@ -31,7 +31,7 @@ Este é o canal central do servidor, contendo todos os alunos regularmente matri
 <li>Canal #Oportunidades de Emprego 📊:</li>  
 Este fórum engloba alunos atuais e egressos do curso de Engenharia de Computação do IFPB - campus Campina Grande. Ele servirá como intermédio de comunicação para que os ex-estudantes possam compartilhar suas experiências na área da tecnologia, divulgar vagas de emprego e/ou receber oportunidades advindas da coordenação do curso.  
 
-<li>Canal “Oportunidades Internas 📌:</li>
+<li>Canal #Oportunidades Internas 📌:</li>
 Fórum destinado aos atuais alunos do curso, de modo que estes possam receber mensagens de divulgação referentes aos editais internos do IFPB (como bolsas de monitoria, pesquisa e extensão, auxílios estudantis, etc.). 
 
 <li>Canal #Dúvidas 🙋‍♀️:</li>
@@ -53,7 +53,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <li>Integração com o Stack Overflow 🗣️</li>  
 
-Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sitee de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
 
 <li>Envio de dicas acadêmicas ✍️</li>  
 
@@ -63,7 +63,7 @@ Em um intervalo de (tempo), o servidor encaminha mensagens com para suporte acad
 
 <h2 id="arquivos"> :floppy_disk: DESCRIÇÃO DOS ARQUIVOS DO PROJETO</h2>
 
-<p>Esse projeto inclui arquivos executáveis e de destino, além de acesso ao nosso diretório fonte (repositório), como a seguir:</p>
+<p>Esse projeto inclui arquivos executáveis e de destino, além de acesso ao diretório fonte (repositório), como a seguir:</p>
 <h4>Arquivos executáveis:</h4>
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte com os procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
@@ -73,13 +73,13 @@ Em um intervalo de (tempo), o servidor encaminha mensagens com para suporte acad
 
 <h4>Arquivos de destino:</h4> 
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/alunos.csv"><b>alunos.csv</b></a> - Contém o arquivo de "alunos.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta alunos matriculados em uma Instituição de Ensino Pública.</li>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/professores.csv"><b>professores.csv</b></a> - Contém o arquivo de "professores.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta professores vinculados à uma Instituição de Ensino Pública</li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/alunos.csv"><b>alunos.csv</b></a> - Contém o arquivo de "alunos.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta alunos matriculados em uma Instituição Pública de Ensino.</li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/professores.csv"><b>professores.csv</b></a> - Contém o arquivo de "professores.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta professores vinculados à uma Instituição Pública de Ensino.</li>
 </ul>
 
 <h4>Diretório fonte:</h4>
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB"><b> Bot_Discord_IFPB</b></a> - Inclui todos os arquivos listados acima </li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB"><b> Bot_Discord_IFPB</b></a> - Inclui todos os arquivos listados acima. </li>
 </ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
@@ -91,7 +91,7 @@ Em um intervalo de (tempo), o servidor encaminha mensagens com para suporte acad
   <p> Utilizamos a plataforma <strong>Discord</strong> como alicerce do Bot. A plataforma é um dos principais meios de comunicação dentro da comunidade de TI, além de possuir ferramentas próprias de autenticação e atribuição de cargos. </p>
     
   <li>Python</li>
-  <p> Para o desenvolvimento do projeto, utilizados como base a linguagem de programação<strong> Python </strong>, tanto por ser a ferramenta de aprendizado utilizada durante o curso de Algoritmos, quando por ser uma linguagem de alto nível, orientada a objetos, funcional, de tipagem dinâmica e forte.
+  <p> Para o desenvolvimento do projeto, utilizados como base a linguagem de programação<strong> Python</strong>, tanto por ser a ferramenta de aprendizado utilizada durante o curso de Algoritmos, quando por ser uma linguagem de alto nível, orientada a objetos, funcional, de tipagem dinâmica e forte.
     
   <li>Pandas</li>
   <p> Utilizados, para manipulação dos Dataframes, a biblioteca <strong>Pandas</strong>, visto que esta auxilia com uma melhor visualização do Dataframe e possuir uma filtragem de dados melhor documentada.</p>
