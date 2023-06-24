@@ -1,35 +1,47 @@
 import requests
+import xml.etree.ElementTree as ET
 
-def buscar_solucoes(consulta):
-    api_url = "https://api.stackexchange.com/2.3/search"
-    params = {
-        "order": "desc",
-        "sort": "relevance",
-        "intitle": consulta,
-        "site": "stackoverflow",
+def pesquisar_artigos_arxiv(palavras_chave, max_resultados=5):
+    base_url = 'http://export.arxiv.org/api/query'
+    parametros = {
+        'search_query': palavras_chave,
+        'max_results': max_resultados,
+        'sortBy': 'relevance',
+        'sortOrder': 'descending',
     }
-    response = requests.get(api_url, params=params)
-    data = response.json()
-    return data
 
-consulta = input("Digite o erro ou linha de código: ")
-resultados = buscar_solucoes(consulta)
+    response = requests.get(base_url, params=parametros)
 
-# Filtrar resultados pelo título desejado
-titulo_desejado = consulta.lower()  # Converter para minúsculas para comparação
-resultados_filtrados = [item for item in resultados["items"] if titulo_desejado in item["title"].lower()]
+    if response.status_code == 200:
+        resultados = []
 
-# Limitar o número de soluções exibidas
-num_solucoes_exibidas = 5
-resultados_limitados = resultados_filtrados[:num_solucoes_exibidas]
+        # Parse do XML retornado pela API
+        root = ET.fromstring(response.content)
 
-# Verificar se há resultados válidos na resposta
-if len(resultados_limitados) > 0:
-    mensagem = "Aqui estão as 5 soluções mais relevantes:\n"
-    for i, item in enumerate(resultados_limitados, start=1):
-        titulo = item["title"]
-        link_resposta = item["link"]
-        mensagem += f"{i}. {titulo}\n   {link_resposta}\n"
-    print(mensagem)
-else:
-    print("Nenhuma solução encontrada.")
+        # Percorrer os elementos 'entry' no XML
+        for entry in root.findall('{http://www.w3.org/2005/Atom}entry'):
+            # Extrair as informações dos artigos
+            titulo = entry.find('{http://www.w3.org/2005/Atom}title').text
+            autores = [autor.text for autor in entry.findall('{http://www.w3.org/2005/Atom}author/{http://www.w3.org/2005/Atom}name')]
+            pdf_url = entry.find('{http://www.w3.org/2005/Atom}link[@title="pdf"]').attrib['href']
+            
+            resultado = {
+                'titulo': titulo,
+                'autores': autores,
+                'pdf_url': pdf_url,
+            }
+            resultados.append(resultado)
+
+        return resultados
+    else:
+        # Tratar erros de requisição
+        print('Ocorreu um erro na requisição:', response.status_code)
+        return []
+
+resultados = pesquisar_artigos_arxiv("machine learning")
+
+for resultado in resultados:
+    print(f'Título: {resultado["titulo"]}')
+    print(f'Autores: {", ".join(resultado["autores"])}')
+    print(f'Link de download: {resultado["pdf_url"]}')
+    print()

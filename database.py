@@ -1,147 +1,51 @@
-import arxiv
 import pandas as pd
-import smtplib
-import random
-import email.message
-import requests
-from config import password, email_bot
 
+dicas = [
+    "Para acessar a rede Wi-Fi do campus Campina Grande, acesse o link e siga os procedimentos: wifi.cge.ifpb.edu.br/",
+    "Para ter acesso às últimas notícias do campus Campina Grande, acesse: www.ifpb.edu.br/campinagrande",
+    "Precisa de transporte público para ir ao campus ou voltar para casa? Fique ligado: os ônibus da rota IFPB são: 022, 660 e 220.",
+    "Precisa de transporte público para ir ao campus ou voltar para casa? Confira os horários da rota IFPB:",
+    "Para saber mais sobre Assistência Estudantil do Campus, acesse: www.ifpb.edu.br/campinagrande/assistencia-estudantil"
+    "Revise regularmente o conteúdo já estudado para fortalecer a memória.",
+    "Mantenha uma atitude positiva e persistente em relação aos estudos.",
+    "Faça um cronograma de estudos e siga-o.",
+    "Estabeleça metas claras e mensuráveis para o seu estudo.",
+    "Mantenha uma atitude positiva e persistente em relação aos estudos.",
+    "Revise regularmente o conteúdo já estudado para fortalecer a memória.",
+    "Faça pausas regulares durante o estudo para descansar a mente.",
+    "Utilize técnicas de memorização, como mapas mentais e resumos.",
+    "É fundamental aliar o estudo teórico com as atividades práticas.",
+    "Não hesite em pedir ajuda em caso de dúvidas!",
+    "Conteúdos de excelência também podem ser encontrados em livros e manuais.",
+    "Seja curioso! Além de reunir informações de forma mais leve, esse método te dará uma visão ampla sobre o assunto, podendo fazer conexões com outras matérias.",
+    "Ensine outra pessoa! Sempre existirão dúvidas diferentes das suas e essas perguntas podem ser muito úteis para você.",
+    "Assista a filmes sobre a matéria. O fato de ser um material audiovisual pode ajudar na memorização.",
+    "Leia no mínimo 3 vezes o conteúdo para que ele seja realmente fixado.",
+    "'Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende' - Leonardo da Vinci.",
+    "Não desista de estudar por causa de um dia ruim. Seja persistente!",
+    "Não veja estudar como uma tortura; abrace a dádiva de aprender e evoluir."
+    "Seu código é como uma pizza, é melhor quando está bem 'implementada' e não possui 'bugs'!",
+    "Quando estiver programando, lembre-se de que um bom café pode ser o seu 'compilador' secreto!",
+    "Assim como o Pikachu evolui para o Raichu, você precisa evoluir suas habilidades de programação para se tornar um mestre!",
+    "Não se preocupe se o seu código não funcionar de primeira. Até mesmo os grandes mestres já receberam mensagens de erro!",
+    "A paciência é uma virtude na programação. Seu código pode demorar para compilar, mas lembre-se de que a espera valerá a pena!",
+    "Aprender a programar é como aprender um novo idioma. Em vez de verbos e substantivos, você terá loops e condicionais!",
+    "O segredo para resolver um bug é olhar para o seu código com um olhar 'depurador'!",
+    "Não tenha medo de pedir ajuda. Um programador sempre pode contar com seus 'byte-amigos'!",
+    "Programar é como construir um castelo de cartas. Certifique-se de ter uma base sólida antes de adicionar mais funcionalidades!",
+    "Um programador bem-sucedido sabe que erros são apenas 'features' inesperadas!",
+    "qual é o animal favorito dos programadores? O bit-coin!",
+    "lembre-se que é fundamental contar com uma estrutura sólida de lógica de programação, já que ela é quem te ajuda a ter uma compreensão mais eficiente da formação do código e desenvolver soluções funcionais.",
+    "não decore a sintaxe de uma linguagem de programação, pois ela pode ser consultada a qualquer momento na documentação da linguagem. Invés disso, foque em aprender sobre os fundamentos, isso dará liberdade para implementar soluções em qualquer linguagem.",
+    "utilize papel e caneta; antes de codificar, foque nas ideias e conceitos que cercam o processo. Treine sua mente para resolver esses problemas, isso vai ajudar a traçar o melhor caminho e evitar frustrações com soluções falhas.",
+    "não copie e cole códigos prontos. Isto impede que você analise os fundamentos por trás da lógica desenvolvida.",
+    "antes de codificar, é importante ter diferentes perspectivas sobre o problema. Use ferramentas e técnicas, como fluxogramas, para planejar a estrutura do código antes de escrever e encontrar a solução mais adequada à situação.",
+    "teste sempre o seu código! Ao finalizar uma funcionalidade, tire alguns minutos para clarear a mente e retorne à aplicação. Faça testes buscando refletir sobre os diferentes cenários de uso daquele item e verifique a presença de falhas.",
+    "revisar o código constantemente. De tempos em tempos, volte ao código já implementado e revise-o. Analise se o trecho ainda é necessário, se está funcionando como esperado e se algo pode ser melhorado.",
+    "lembre-se de comentar seu código: reserve um espaço para explicar de forma objetiva a sua linha de raciocínio sobre o que foi construído.",
+    "não repita o código muitas vezes; você pode transformar o trecho que se repete em um componente ou uma função global. Desse modo, esses elementos poderão ser utilizados pela aplicação inteira, mas serão escritos apenas uma vez em um único lugar.",
+    "pular o básico e já partir para o desenvolvimento de sistemas complexos resultará em frustração. Lembre-se: a pressa é inimiga da perfeição. Avance gradualmente com a complexidade dos projetos criados."
+]
 
 students = pd.read_csv('data/alunos.csv')
 teachers = pd.read_csv('data/professores.csv')
-
-def authenticate(user):
-    """Receives the email entered by a user and checks if it is present in a database.
-
-    The function verifies if the email provided by the user is present in the databases of students
-    and teachers. If it is present, it returns the corresponding name and a boolean value True to indicate
-    successful authentication. Otherwise, it returns None and a boolean value False.
-
-    Args:
-        user (str): The email entered by the user for authentication.
-
-    Returns:
-        tuple: A tuple containing the name associated with the authenticated email (if found) and a boolean value
-        indicating if the authentication was successful.
-
-    Raises:
-        None.
-        
-    """
-
-    if user in students['E-mail academico'].values:
-        filter_name = students.loc[students['E-mail academico'] == user, 'Nome'].values
-        name = filter_name.item()
-        return name, True
-
-    elif user in teachers['E-mail'].values:
-        filter_name = teachers.loc[teachers['E-mail'] == user, 'Nome'].values
-        name = filter_name.item()
-        return name, True
-
-    else:
-        return None, False
-    
-def random_key():
-    """Generates a random key composed of uppercase letters, lowercase letters, and digits.
-
-    The function generates a random key with 6 characters, consisting of a combination of uppercase letters,
-    lowercase letters, and digits. The generated key can be used for various purposes, such as generating
-    temporary passwords, access tokens, unique identifiers, among others.
-
-    Returns:
-        str: A random key composed of 6 alphanumeric characters.
-
-    Raises:
-        None.
-
-    """
-    key = ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&%$#@', k=6))
-    return key
-
-def send_email(addressee, key):
-    """
-    Sends an email with the verification code to the specified recipient.
-
-    Args:
-        addressee (str): The email address of the recipient.
-        key (str): The verification code to be included in the email.
-
-    Returns:
-        None
-
-    Raises:
-        None
-    """
-
-    corpo_email = f"""
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-            body {{
-                font-family: 'Roboto', sans-serif;
-                background-color: #f2f2f2;
-                margin: 0;
-                padding: 0;
-            }}
-            .container {{
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #ffffff;
-                border-radius: 6px;
-                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            }}
-            h1 {{
-                font-size: 24px;
-                margin-bottom: 20px;
-                color: #333333;
-            }}
-            p {{
-                font-size: 18px;
-                margin-bottom: 10px;
-                color: #555555;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Você resolveu entrar para o lado certo da força! Aqui está o seu código:</h1>
-            <p>{key}</p>
-        </div>
-    </body>
-    </html>
-    """
-
-    msg = email.message.Message()
-    msg['Subject'] = "código de verificação do servidor"
-    msg['From'] = f'{email_bot}'
-    msg['To'] = f'{addressee}'
- 
-    msg.add_header('Content-Type', 'text/html')
-    msg.set_payload(corpo_email )
-
-    s = smtplib.SMTP('smtp.gmail.com: 587')
-    s.starttls()
-
-    s.login(msg['From'], password)
-    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
-    print('Email enviado')
-
-def pesquisar_artigos_arxiv(palavras_chave, max_resultados=5):
-    resultados = arxiv.Search(query=palavras_chave, max_results=max_resultados).results()
-    return resultados
-
-def buscar_solucoes(consulta):
-    api_url = "https://api.stackexchange.com/2.3/search"
-    params = {
-        "order": "desc",
-        "sort": "relevance",
-        "intitle": consulta,
-        "site": "stackoverflow",
-    }
-    response = requests.get(api_url, params=params)
-    data = response.json()
-    return data
