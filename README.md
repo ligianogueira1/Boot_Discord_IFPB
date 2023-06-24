@@ -165,15 +165,15 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 
 <h2 id="bot">🤖 O BOT</h2>
 
-<h4>Confira alguns exemplos do funcionamento do Bot IFPB</h4>
+<h4>➔ Confira alguns exemplos do funcionamento do Bot IFPB</h4>
 
 <h4 align="center">Canais:</h4>
 <p align="center"> 
 <a href="" target="_blank"><img src="https://uploaddeimagens.com.br/images/004/519/173/full/Captura_de_tela_2023-06-24_183525.png?1687643464"/></a>
 
-<h4 align="center">Envio automática de dicas acadêmicas:</h4>
+<h4 align="center">Envio automático de dicas acadêmicas:</h4>
 <p align="center"> 
-<a href="" target="_blank"><img src="https://uploaddeimagens.com.br/images/004/519/179/full/Captura_de_tela_2023-06-24_151119.png?1687643717"/></a>
+<a href="" target="_blank"><img src="https://uploaddeimagens.com.br/images/004/519/181/full/Captura_de_tela_2023-06-24_151119.png?1687643850"/></a>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
