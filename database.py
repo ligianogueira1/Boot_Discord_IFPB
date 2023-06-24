@@ -1,7 +1,9 @@
+import arxiv
 import pandas as pd
 import smtplib
 import random
 import email.message
+import requests
 from config import password, email_bot
 
 
@@ -127,3 +129,19 @@ def send_email(addressee, key):
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
     print('Email enviado')
+
+def pesquisar_artigos_arxiv(palavras_chave, max_resultados=5):
+    resultados = arxiv.Search(query=palavras_chave, max_results=max_resultados).results()
+    return resultados
+
+def buscar_solucoes(consulta):
+    api_url = "https://api.stackexchange.com/2.3/search"
+    params = {
+        "order": "desc",
+        "sort": "relevance",
+        "intitle": consulta,
+        "site": "stackoverflow",
+    }
+    response = requests.get(api_url, params=params)
+    data = response.json()
+    return data
