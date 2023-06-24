@@ -13,7 +13,7 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <a href="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" target="_blank"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=gif/path/sa16dc2497d80e05e/image/icd162bb94ffa0064/version/1551588419/image.gif" alt="image host" height="142px"/></a>
 </p>
 
-<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#detalhamento">Descrição dos canais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
+<h4> | <a href="#contexto">Contexto e objetivo</a> | <a href="#detalhamento">Descrição dos canais</a> | <a href="#funcionalidades">Funcionalidades adicionais</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#creditos">Créditos</a> |</h4>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -22,7 +22,6 @@ Criação de um servidor com mecanismo de autenticação de usuários, na plataf
 <p>Intitulado de BOT IFPB, o robô desenvolvido na plataforma Discord é um mecanismo de autenticação para os acadêmicos do curso, incluindo docentes, discentes e alunos egressos. O desenvolvimento do projeto dar-se-á uma proposta de avaliação para a cadeira de Algoritmos e Programação, ministrada pro Henrique Cunha.</p>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
-
 
 <h2 id="detalhamento"> :clipboard: DESCRIÇÃO DOS CANAIS DO SERVIDOR</h2>
 
@@ -44,9 +43,21 @@ Traduzido livremente para o português como "fora do assunto”, este termo est�
 <li>Canal #️Professores 📚:</li>  
 Canal destinado apenas para intermédio de comunicação entre os docentes do curso. Neste, os professores podem discutir desde questões as quais julguem relevantes para o andamento do curso a temáticas livres. 
 
-<li>Comando “!artigo” 🔍:</li>  
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. É importante frisar que outros membros podem ter acesso à sua pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”. 
+<h2 id="comandos"> 💻 FUNCIONALIDADES ADICIONAIS </h2>
+
+<li>Comando “!artigo” 🔍</li>  
+
+Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. É importante frisar que outros membros podem ter acesso à pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”).
+
+<li>Integração com o Stack Overflow 🗣️</li>  
+
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sitee de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
+
+<li>Envio de dicas acadêmicas ✍️</li>  
+
+Em um intervalo de (tempo), o servidor encaminha mensagens com para suporte acadêmico aos discentes, dentre elas: dicas sobre o Campus (como se conectar ao Wi-Fi e horário dos transportes públicos, por exemplo), dicas acadêmicas/de estudo (por exemplo, revisar regularmente o conteúdo já estudado para fortalecer a memória) e dicas profissionais/da área (a exemplo desta: "Quando estiver programando, lembre-se de que um bom café pode ser o seu 'compilador' secreto!"). Algumas das orações podem conter tom humorístico, também sendo uma característica pertinente ao BOT.
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
