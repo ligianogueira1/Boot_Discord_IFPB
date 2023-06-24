@@ -52,7 +52,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h2 id="arquivos"> :floppy_disk: DESCRIÇÃO DOS ARQUIVOS DO PROJETO</h2>
 
-<p>Este projeto inclui arquivos executáveis e de destino, além de acesso ao nosso diretório fonte (repositório), como a seguir:</p>
+<p>Este projeto inclui arquivos executáveis e de destino, além de acesso ao diretório fonte (repositório), como a seguir:</p>
 <h4>➔ Arquivos executáveis:</h4>
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizadas as seguintescom os procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
@@ -63,7 +63,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
-  No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a>
+  » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a>
   <li>asyncio:</li>
   <li>discord:</li>
 </ul>
