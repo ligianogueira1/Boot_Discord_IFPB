@@ -126,7 +126,7 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
-  <li>from database import *: Para bot_function, são importados os dataframes a serem utilizadas na função authenticate, optou-se por importar todo o modúlo por questões de praticidade </li>
+  <li>from database import *: Para bot_function, são importados os dataframes a serem utilizadas na função authenticate, optou-se por importar todo o modúlo por questões de praticidade. </li>
   <li>from config import *: os dados confidenciais do config.py são necessários para a normalização do funcionamento das funções do Bot. </li>
 </ul>  
 <h4>➔ Arquivos de destino:</h4> 
