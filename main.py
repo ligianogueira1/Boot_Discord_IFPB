@@ -79,7 +79,7 @@ async def on_member_join(member):
 )
     await public_channel.send('Bem-vindo, jovem Padawan! Para entrar para o lado nerd da força, digite o seu e-mail.')
     await public_channel.send('Caso o e-mail não conste na base de dados, você será banido e não entrará para o nosso lado da força.')
-    await public_channel.send('O tempo limite para o processamento é de 5 minutos.')
+    await public_channel.send('O tempo limite para o processo é de 5 minutos.')
 
     def check(message):
         return message.author == member and message.channel == public_channel
