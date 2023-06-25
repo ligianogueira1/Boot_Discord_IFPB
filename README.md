@@ -102,6 +102,7 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a>
   <li>asyncio: sendo uma biblioteca para escrever código simultâneo, utilizamos as sintaxes async/await. Com o seu conjunto de APIs, conseguimos efetuar funções Python simultaneamente e ter domínio sobre sua execução, além de controlar subprocessos, distribuir tarefas por meio de filas e sincronizar código simultâneo. Apesar de o parâmetro ctx ser uma convenção para boa parte dos comandos, "member" também foi utilizado para uma melhor legibilidade do código.</li>
   <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens possam ser enviadas, lidas e respondidas com base em pré-definições.</li>
+  <li>from discord.ext import commands:  O discord.ext é um módulo da biblioteca discord.py que oferece um framework de extensão para criar bots e aplicações utilizando a API do Discord. O seu uso dentro do código se deu de tal forma que facilitasse a escrita dos comandos.</li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b>:</a>
@@ -119,10 +120,9 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 <h4>➔ Módulos internos:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
-  <li>from discord.ext import commands: correspondendo ao próprio nome do módulo, aqui, estendemos a biblioteca do Discord e adicionamos uma extensão de comando para auxiliar no processo de autenticação.</li>
   <li>from config import *: ao buscar os dados confidenciais do config.py e importá-los no servidor, conseguimos prosseguir com os comandos necessários para o processo de autenticação do usuário. </li>
-  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de envio de e-mail, geração e validação da chave de autenticação, comando "!artigos" e comando !stackoverflow. Por isso, fora imprescindível importá-lo neste arquivo vinculado ao Discord. </li>
-  <li>from database import *: neste arquivo, encontramos docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo ao servidor através do main.py. </li>
+  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de  validação e envio de e-mail, geração e validação da chave de autenticação e as funções utilizadas nos comando "!artigos" e comando !stackoverflow. O seu uso, fora imprescindível, tanto por questões de organização e leitura do código, tanto por maior praticidade de uso das funções </li>
+  <li>from database import *: neste arquivo, encontramos strings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo ao servidor através do main.py. </li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
