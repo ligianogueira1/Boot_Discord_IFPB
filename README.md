@@ -76,7 +76,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <li>Integração com o Stack Overflow 🗣️:</li>  
 <ul>
-Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sitee de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
 </ul>
 
 <li>Envio de dicas acadêmicas 🎓:</li>
@@ -162,7 +162,7 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 </ul>
 <ul>
   <li>Chat GPT</li>
-  <p> Para tirar dúvidas e obter direcionamentos durante a escrita do código, o <strong>Chat GPT</strong> foi de grande ajuda, sendo uma importante ferramenta para desenvolvimento desse projeto. O seu uso foi dado de acordo com as diretrizes dadas pela OpenAI e está sendo devidamente citado no código, todos os trechos utilizados e gerados foram devidamente adaptados </p>
+  <p> Para tirar dúvidas e obter direcionamentos durante a escrita do código, o <strong>Chat GPT</strong> foi de grande ajuda, sendo uma importante ferramenta para desenvolvimento desse projeto. O seu uso foi dado de acordo com as diretrizes dadas pela OpenAI, todos os trechos utilizados e gerados foram devidamente adaptados e o Chat GPT está sendo devidamente para evitar plágio </p>
 </ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
