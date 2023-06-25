@@ -76,7 +76,7 @@ Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busc
 
 <li>Integração com o Stack Overflow 🗣️:</li>  
 <ul>
-Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as 5 soluções mais relevantes encontradas no site e seus respectivos links.
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as soluções mais relevantes encontradas no site e seus respectivos links.
 </ul>
 
 <li>Envio de dicas acadêmicas 🎓:</li>
