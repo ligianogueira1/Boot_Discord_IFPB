@@ -92,9 +92,9 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 <h4>➔ Arquivos executáveis:</h4>
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizados procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
-   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém docstrings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. </li>
-    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> - Contém o código-fonte com as intruções para que o BOT encaminhe a chave de verificação para o e-mail informado pelo usuário. </li>
-   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo responsável pela informação dos dados de e-mail e senha do servidor para que o processo de autenticação possa ocorrer (envio do código de verificação e, posteriormente, atribuição de cargos). Trata-se de uma informação confidencial. </li>
+   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém os dataframes utilizados para a autenticação e strings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. </li>
+    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> - Modúlo responsável por armazenar as funções utilizadas no main.py, as funções estão devidamente documentadas no código por suas respectivas docstrings </li>
+   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo responsável pela informação dos dados de e-mail, token de comunicação com o google, token do discord e as ID's dos canais do servidor, servindo como recurso de segurança e confidencialidade das informações sensíveis do código</li>
 </ul>
 
 <h4>➔ Bibliotecas utilizadas:</h4> 
