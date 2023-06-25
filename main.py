@@ -92,7 +92,7 @@ async def on_member_join(member):
         if authenticated:
             chave = random_key()
             send_email(email, chave)
-            await public_channel.send('A chave de autenticação foi enviada para o seu e-mail. Por favor, informe-a para ter acesso aos canais do servidor')
+            await public_channel.send('A chave de autenticação foi enviada para o seu e-mail. Por favor, informe-a para ter acesso aos canais do servidor!')
 
             while True:
                 message = await bot.wait_for('message', check=check, timeout=300)
@@ -140,7 +140,7 @@ async def on_member_join(member):
 
 # FUNCIONALIDADES DO BOT
 
-@bot.command()
+@bot.command(name="artigos")
 async def artigos(member):
     """
     Comando para pesquisar artigos por meio da biblioteca arXiv.
@@ -192,7 +192,7 @@ async def artigos(member):
         await member.send('Tempo esgotado. Por favor, tente novamente.')
 
 
-@bot.command()
+@bot.command(name="dúvida")
 async def duvida(ctx):
     """
     Comando para buscar soluções de código no Stack Overflow.
