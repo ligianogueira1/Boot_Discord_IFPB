@@ -192,7 +192,7 @@ async def artigos(member):
         await member.send('Tempo esgotado. Por favor, tente novamente.')
 
 
-@bot.command(name="dúvida")
+@bot.command(name="duvida")
 async def duvida(ctx):
     """
     Comando para buscar soluções de código no Stack Overflow.
