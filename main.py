@@ -72,7 +72,7 @@ async def on_member_join(member):
     'Eu sou um bot desenvolvido para ajudar nas suas pesquisas e solucionar dúvidas de programação.\n'
     'Aqui estão alguns dos comandos disponíveis:\n\n'
     '!artigos: Pesquisa artigos no arXiv.\n'
-    '!stackoverflow: Busca soluções no Stack Overflow.\n\n'
+    '!duvida: Busca soluções no Stack Overflow.\n\n'
     'Para explorar o servidor, interagir com os membros e utilizar os comandos, realize a autenticação.\n'
     'Se tiver alguma dúvida ou precisar de ajuda, não hesite em mencionar um administrador ou moderador.\n\n'
     'Divirta-se e aproveite a comunidade!'
