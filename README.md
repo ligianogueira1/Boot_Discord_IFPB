@@ -69,14 +69,14 @@ Canal destinado apenas para intermédio de comunicação entre os docentes do cu
 
 <h2 id="funcionalidades">✍️ FUNCIONALIDADES ADICIONAIS</h2>
 
-<li>Comando “!artigo” 🔍:</li> 
+<li>Comando “!artigos” 🔍:</li> 
 <ul>
 Este comando pode ser utilizado dentro do servidor, em qualquer canal, para busca de artigos científicos (no idioma inglês) localizados através da palavra-chave informada. O Bot retornará 5 artigos classificados por ordem de relevância na arvix, constando: título, autor e link para download em pdf. É importante frisar que outros membros podem ter acesso à pesquisa, com exceção do chat privado com o Bot IFPB (para acessá-lo, basca clicar sobre o nome ou ícone do mascote e digitar o comando no campo “Conversar com @IFPB”).
 </ul>
 
 <li>Integração com o Stack Overflow 🗣️:</li>  
 <ul>
-Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor e respondê-lo com as soluções mais relevantes encontradas no site e seus respectivos links.
+Pertencente à Rede Stack Exchange, o Stack Overflow é um dos maiores sites de perguntas e respostas para profissionais e entusiastas na área de programação de computadores. Por isso, a funcionalidade é pertinente ao solicitar a pergunta ao usuário do servidor (através do comando “!duvida”) e respondê-lo com as soluções mais relevantes encontradas no site e seus respectivos links.
 </ul>
 
 <li>Envio de dicas acadêmicas 🎓:</li>
@@ -93,16 +93,16 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 <ul>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pela integração entre o Bot e o servidor do Discord. Para isso, foram utilizados procedimentos de autenticação, em que o BOT envia os comandos de solicitação de e-mail e atribui o usuário ao respectivo cargo quando a condição é cumprida. </li>
    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b></a> - Contém os dataframes utilizados para a autenticação e strings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. </li>
-    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> - Modúlo responsável por armazenar as funções utilizadas no main.py, as funções estão devidamente documentadas no código por suas respectivas docstrings </li>
-   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo este responsável pela informação dos dados de e-mail, token de comunicação com o google, token do discord e as ID's dos canais do servidor. o .gitigoore serve como recurso de segurança e confidencialidade das informações sensíveis do código, para o funcionamento devido do código, crie um arquivo "config.py" e adicione as variáveis: token, email_bot, password, pretendente_id, public_channel_id , off_topic_id e welcome_id, as variáveis de ID podem ser substituida pelos seus canais de preferência</li>
+    <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b></a> - Modúlo responsável por armazenar as funções utilizadas no main.py, estando estas devidamente documentadas no código por suas respectivas docstrings. </li>
+   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/.gitignore"><b>.gitignore</b></a> - Contém um arquivo config.py não rastreável, sendo este responsável pela informação dos dados de e-mail, token de comunicação com o Google, token do Discord e as ID's dos canais do servidor. Sendo assim, o .gitigoore é utilizado como recurso de segurança e confidencialidade das informações sensíveis do código. Caso queira testar o servidor e sua funcionamento devida, crie um arquivo "config.py" e adicione as variáveis: token, email_bot, password, pretendente_id, public_channel_id, off_topic_id e welcome_id (as variáveis de ID podem ser substituídas pelos canais de sua preferência). </li>
 </ul>
 
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a>
   <li>asyncio: sendo uma biblioteca para escrever código simultâneo, utilizamos as sintaxes async/await. Com o seu conjunto de APIs, conseguimos efetuar funções Python simultaneamente e ter domínio sobre sua execução, além de controlar subprocessos, distribuir tarefas por meio de filas e sincronizar código simultâneo. Apesar de o parâmetro ctx ser uma convenção para boa parte dos comandos, "member" também foi utilizado para uma melhor legibilidade do código.</li>
-  <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens possam ser enviadas, lidas e respondidas com base em pré-definições.</li>
-  <li>from discord.ext import commands:  O discord.ext é um módulo da biblioteca discord.py que oferece um framework de extensão para criar bots e aplicações utilizando a API do Discord. O seu uso dentro do código se deu de tal forma que facilitasse a escrita dos comandos.</li>
+  <li>discord: esta biblioteca tem como princípio o conceito de eventos, possibilitando que as mensagens possam ser enviadas, lidas e respondidas com base em pré-definições. </li>
+  <li>from discord.ext import commands:  O discord.ext é um módulo da biblioteca discord.py que oferece um framework de extensão para criar bots e aplicações utilizando a API do Discord. A sua utilização dentro do código deu-se de forma a facilitar a escrita dos comandos. </li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/database.py"><b>database.py</b>:</a>
@@ -112,7 +112,7 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
   <li>email.message: sendo uma biblioteca de gerenciamento, seu componente central é um “modelo de objeto” que representa mensagens de e-mail. As aplicações do código interagem com o pacote principalmente através da interface do modelo de objeto definida no submódulo "message".</li>
   <li>random: aqui, são implementados geradores de números pseudoaleatórios para várias distribuições. A biblioteca é utilizada, no código, para gerar a chave de segurança que será enviada para o endereço eletrônico do usuário no processo de autenticação. </li>
-  <li>requests: esta é uma biblioteca necessária para requisições de API, foi utilizada devido as integrações com o Arxiv e Stack Overflow. No código, para ambas as funções, fizemos uso do método "get" para recuperar os dados do endpoint definido. Entretanto, para a primeira, foram utilizados métodos de busca específicos; para a segunda, por sua vez, definimos o URL da API para varredura dos dados e utilizamos o response.json() para exibir as respostas obtidas. </li>
+  <li>requests: esta é uma biblioteca necessária para requisições de API, foi utilizada devido às integrações com o Arxiv e Stack Overflow. No código, para ambas as funções, fizemos uso do método "get" para recuperar os dados do endpoint definido. Entretanto, para a primeira, foram utilizados métodos de busca específicos; para a segunda, por sua vez, definimos o URL da API para varredura dos dados e utilizamos o response.json() para exibir as respostas obtidas. </li>
   <li>smtplib: familiar ao protocolo HTTP, o SMTP (Simple Mail Transfrer Protocol) é utilizado para envio de e-mail; ele dita como este será formatado, criptografado e transmitido.</li>
   <li>xml.etree.ElementTree: XML se refere a "Extensible Markup Language" e possui similaridades com o HTML, sendo que sua proposta principal é guardar e transportar dados. Trata-se de uma linguagem auto-descritiva. Esta biblioteca implementa uma API simples e eficiente para analisar e criar dados XML, funcionando como uma estrutura de árvore que suporta hierarquia. Juntamente aos métodos findall() e find(), o Bot consegue fazer uma busca e retornar o resultado solicitado com base nas variáveis pré-definidas. O modúlo foi utilizado para realizar uma cópia do arquivo XML gerado por uma requisição e acessar as informações como strings. </li>
 </ul>
@@ -121,17 +121,17 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
   <li>from config import *: ao buscar os dados confidenciais do config.py e importá-los no servidor, conseguimos prosseguir com os comandos necessários para o processo de autenticação do usuário. </li>
-  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de  validação e envio de e-mail, geração e validação da chave de autenticação e as funções utilizadas nos comando "!artigos" e comando !stackoverflow. O seu uso, fora imprescindível, tanto por questões de organização e leitura do código, tanto por maior praticidade de uso das funções </li>
+  <li>from bot_functions import *: o arquivo bot_functions é o responsável pelo processo de verificação e envio de e-mail ao usuário do servidor, bem como geração e validação da chave de autenticação. Além disso, ele importa as funções utilizadas nos comandos "!artigos" e "!duvida". O seu uso fora imprescindível tanto por questões de organização e leitura do código, quanto por maior praticidade de uso das funções. </li>
   <li>from database import *: neste arquivo, encontramos strings com dicas a serem enviadas, em um intervalo de 60 minutos, para o usuário autenticado no servidor. "From" e "import" são comandos utilizados para integrá-lo ao servidor através do main.py. </li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/bot_functions.py"><b>bot_functions.py</b>:</a>
-  <li>from database import *: Para bot_function, são importados os dataframes a serem utilizadas na função authenticate, optou-se por importar todo o modúlo por questões de praticidade. </li>
+  <li>from database import *: para bot_function, são importados os dataframes a serem utilizados na função authenticate. Optamos pela importação de todo o modúlo devido à questões de praticidade. </li>
   <li>from config import *: os dados confidenciais do config.py são necessários para a normalização do funcionamento das funções do Bot. </li>
 </ul>  
 <h4>➔ Arquivos de destino:</h4> 
 <ul>
-  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/alunos.csv"><b>alunos.csv</b></a> - Contém o arquivo de "alunos.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta alunos matriculados em uma Instituição de Ensino Pública.</li>
+  <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/alunos.csv"><b>alunos.csv</b></a> - Contém o arquivo de "alunos.csv", utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta alunos matriculados em uma Instituição de Ensino Pública.</li>
   <li><a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/data/professores.csv"><b>professores.csv</b></a> - Contém o arquivo de "professores.csv" utilizado como banco de dados do projeto. Não é uma informação confidencial, visto que apresenta professores vinculados à uma Instituição de Ensino Pública.</li>
 </ul>
 
@@ -154,7 +154,7 @@ Em um intervalo de 60 minutos, o servidor encaminha mensagens para suporte acad�
 </ul>  
 <ul>
   <li>Pandas</li>
-  <p> Utilizamos, para manipulação dos arquivos .csv, a biblioteca <strong>Pandas</strong>, visto que esta auxilia com uma melhor visualização do Dataframe e possui uma filtragem de dados melhor documentada.</p>
+  <p> Utilizamos, para manipulação dos arquivos .csv, a biblioteca <strong>Pandas</strong>, visto que esta auxilia com uma melhor visualização do Dataframe e possui uma filtragem de dados melhor documentada. </p>
 </ul> 
 <ul>
   <li>HTML</li>
